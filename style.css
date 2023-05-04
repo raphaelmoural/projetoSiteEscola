@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:"";
 }
 
 html {
@@ -14,14 +15,18 @@ a:visited {
 }
 header{
     background:url("");
-    heigth:500 px;
+    background-size:cover;
+    background-size:right;
+    background-size:no-repeat;
+    width:100%;
+    heigth:90vh;
     display:block;
 }
 nav{
     background color: white;
     position:fixed;
     z-index:1;
-    height:75 px;
+    height:75px;
     width:100%;
 }
     
