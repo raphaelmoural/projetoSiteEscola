@@ -17,7 +17,7 @@ html {
 }
 
 .titulo {
-    font-family: ;
+    font-family: var(--titulo);
 }
 
 a:visited {
