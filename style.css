@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Roboto:wght@600&display=swap');
 
 :root{
     --titulo: 'Nunito', sans-serif;
     --fonte-principal: 'Roboto', sans-serif;
+    --azul: #3F51B5;
+    --amarelo: #FEBD01;
 }
 
 *{
@@ -17,8 +19,21 @@ html {
 }
 
 .titulo {
+    color: var(--azul);
     font-family: var(--titulo);
     font-size: 2em;
+    padding: 0.5%;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+.subtitulo{
+    color: var(--amarelo);
+    font-family: var(--titulo);
+    font-size: 1.3em;
+    padding: 0.5%;
+    padding-left: 0;
+    text-transform: uppercase;
 }
 
 a:visited {
@@ -61,4 +76,22 @@ header{
     width: 100%;
     height: 90vh;
     display: block;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.sobre{
+
+}
+
+.ciclos {
+
+}
+
+
+
+.form{
+
 }
