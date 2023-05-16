@@ -11,6 +11,7 @@
     padding: 0;
     font-family: var(--fonte);
     font-weight: 600;
+    text-align: justify;
 }
 
 html {
@@ -64,21 +65,19 @@ nav.scroll{
     gap: 15px;
 }
 
-li{
-    display: flex;
-    margin-right: 20px;
-    padding: 22px 10px;
-    
-}
 .botaoMenu {
+    display: flex;
     background-color: var(--amarelo);
     color: var(--azul);
     text-decoration: none;
     font-size: 18px;
     transition: 0.5s;
     height: 20px;
-    padding: 15%;
+    margin-right: 20px;
+    margin-top: 16px;
+    padding: 8px 10px;
     border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .botaoMenu:hover{
@@ -100,7 +99,8 @@ li{
 }
 
 header{
-    background: url("https://static.wixstatic.com/media/e9762d_ea7c9dbae1d942cfabf051dffbe469ae~mv2.jpg/v1/fill/w_925,h_925,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9762d_ea7c9dbae1d942cfabf051dffbe469ae~mv2.jpg");
+    background: url("./imgs/header1.jpg");
+    filter: brightness(50%);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -126,22 +126,49 @@ button:hover{
 }
 
 .container {
-    margin-left: 20px;
+    margin: 0px 20px;
 }
 
 .sobre{
     margin-top: 10px;
 }
 
+.diferenciais{
+    margin-top: 20px;
+}
 
+.ul-sobre {
+    margin-left: 2em;
+}
 
 .ciclos {
     display: flexbox;
     margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.h1Ciclos {
+    padding: 10px 10px 10px 0px;
 }
 
 .fundamental1, .fundamental2, .ensinoMedio {
     display: inline-block;
+    text-align: center;
+}
+
+.fundamental1 p, .fundamental2 p, .ensinoMedio  p{
+    color: var(--azul);
+}
+
+.imgCiclos {
+    margin: 5px 0px;
+}
+
+.buttonCiclos{
+    margin: 5px;
 }
 
 .fotos{
@@ -184,7 +211,7 @@ footer {
   footer p {
     font-size: 14px;
     color: #999;
-
+    text-align: center;
   }
   .social{
     width:20px;
