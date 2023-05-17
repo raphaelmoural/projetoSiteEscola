@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,600;1,800&display=swap');
 
+
+
 :root{
     --fonte: 'Nunito', sans-serif;
     --azul: #3F51B5;
@@ -56,6 +58,45 @@ nav{
 nav.scroll{
     background-color: var(--azul);
     box-shadow: rgba (5, 5, 131,0.8)0.2em 0.1em 0.2em;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    body{
+      overflow-x:hidden;  
+    }
+    .nav-List{
+        position: absolute;
+        margin: 0;
+        top: 50px;
+        right: 0;
+        width: 30vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #3f51b56f;
+        transform: translateX(100%);
+    }
+
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 25px;
+        width: 50px;
+    }
+
+    .active{
+        transform: translateX(0);
+        transition: 0.5s ease-in;
+    }
 }
 
 .menu{
