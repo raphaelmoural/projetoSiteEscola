@@ -1,4 +1,4 @@
-class MobileNavbar{
+class MobileNavbar {
     constructor(mobileMenu, navList){
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
@@ -7,11 +7,11 @@ class MobileNavbar{
 
         this.handleClick = this.handleClick.bind(this);
     }
-    handleClick{
+    handleClick(){
         this.navList.classList.toggle(this.activeClass);
     }
     addClickEvent(){
-        this.mobileMenu.addEventListener('click' this.handleClick);
+        this.mobileMenu.addEventListener('click', this.handleClick);
     }
 
     init(){
@@ -22,7 +22,9 @@ class MobileNavbar{
     }
 }
 
-const MobileNavbar = new MobileNavbar{
-    '.mobile-menu'
-    '.nav-List'
-}
+const mobileNavbar = new MobileNavbar (
+    '.mobile-menu',
+    '.nav-List',
+)
+
+mobileNavbar.init();
