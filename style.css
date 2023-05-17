@@ -67,7 +67,7 @@ nav.scroll{
 
 @media (max-width: 800px) {
     body{
-      overflow-x:hidden;  
+      overflow-x: hidden;  
     }
     .nav-List{
         position: absolute;
@@ -183,9 +183,8 @@ button:hover{
 }
 
 .ciclos {
-    display: flexbox;
+    display: flex;
     margin-top: 10px;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
