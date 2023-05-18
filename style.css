@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,600;1,800&display=swap');
 
-
-
 :root{
     --fonte: 'Nunito', sans-serif;
     --azul: #3F51B5;
@@ -97,6 +95,17 @@ nav.scroll{
         transform: translateX(0);
         transition: 0.5s ease-in;
     }
+
+    body nav .mobile-menu {
+        height: 30px;
+        width: 30px;
+        margin: 20px;
+    }
+
+    .ciclos{
+        flex-direction: column;
+        margin: 10px;
+    }
 }
 
 .menu{
@@ -156,6 +165,7 @@ button{
     font-weight: 600;
     border: none;
     border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     padding: 8px;
     transition: 0.5s;
     
@@ -178,6 +188,10 @@ button:hover{
     margin-top: 20px;
 }
 
+.imgSobre {
+    
+}
+
 .ul-sobre {
     margin-left: 2em;
 }
@@ -192,6 +206,7 @@ button:hover{
 
 .h1Ciclos {
     padding: 10px 10px 10px 0px;
+    margin-top: 25px;
 }
 
 .fundamental1, .fundamental2, .ensinoMedio {
@@ -205,6 +220,7 @@ button:hover{
 
 .imgCiclos {
     margin: 5px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .buttonCiclos{
@@ -215,8 +231,30 @@ button:hover{
     margin-top: 10px;
 }
 
-.form{
-    margin-top: 10px;
+.form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    
+    padding: 15px;
+    margin: 8px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    width: 45vw;
+    font-size: 1.1em;
+}
+
+.buttonform{
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 47vw;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 footer {
