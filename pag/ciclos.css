@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,600;1,800&display=swap');
+
+:root{
+    --fonte: 'Nunito', sans-serif;
+    --azul: #3F51B5;
+    --amarelo: #FEBD01;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+    font-weight: 600;
+    text-align: justify;
+}
+
+.container {
+    margin: 0px 20px;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.titulo {
+    color: var(--azul);
+    font-family: var(--fonte);
+    font-size: 2em;
+    font-weight: 800;
+    margin: 5px 0;
+    padding: 0.5%;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+.subtitulo{
+    color: var(--amarelo);
+    font-family: var(--fonte);
+    font-size: 1.3em;
+    font-weight: 800;
+    padding: 0.5%;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    height: 75px;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav.scroll{
+    background-color: var(--azul);
+    box-shadow: rgba (5, 5, 131,0.8)0.2em 0.1em 0.2em;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    margin: 5px 20px;
+}
+
+.menu{
+    list-style: none;
+    float: right;
+    display: flex;
+    gap: 15px;
+}
+
+.botaoMenu {
+    display: flex;
+    background-color: var(--amarelo);
+    color: var(--azul);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botaoMenu:hover{
+    background-color: var(--azul);
+    color: var(--amarelo);
+}
+
+.botaoMenu:visited{
+    color: var(--azul);
+}
+
+.botaoMenu:visited:hover{
+    color: var(--amarelo);
+}
+
+button{
+    background-color: var(--amarelo);
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    transition: 0.5s;
+    
+}
+
+button:hover{
+    background-color: var(--azul);
+    color: var(--amarelo);
+}
