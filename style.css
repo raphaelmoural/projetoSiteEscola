@@ -149,6 +149,7 @@ nav.scroll{
 }
 
 header{
+    display: flex;
     background: url("./imgs/header1.jpg");
     filter: brightness(50%);
     background-size: cover;
@@ -182,6 +183,15 @@ button:hover{
 
 .sobre{
     margin-top: 10px;
+    display: flex;
+}
+
+.divTxtSobre{
+    margin: 0 10px 0 0;
+}
+
+.divImgSobre{
+    align-items: end;
 }
 
 .diferenciais{
