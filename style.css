@@ -102,6 +102,10 @@ nav.scroll{
         margin: 20px;
     }
 
+    .sobre{
+        flex-direction: column;
+    }
+
     .ciclos{
         flex-direction: column;
         margin: 10px;
@@ -184,14 +188,16 @@ button:hover{
 .sobre{
     margin-top: 10px;
     display: flex;
+    flex-direction: row;
 }
 
 .divTxtSobre{
-    margin: 0 10px 0 0;
+    margin-right: 20px;
+    width: 50vw;
 }
 
 .divImgSobre{
-    align-items: end;
+    width: 50vw;
 }
 
 .diferenciais{
@@ -199,7 +205,7 @@ button:hover{
 }
 
 .imgSobre {
-    
+    width: 50vw;
 }
 
 .ul-sobre {
@@ -212,6 +218,7 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    
 }
 
 .h1Ciclos {
