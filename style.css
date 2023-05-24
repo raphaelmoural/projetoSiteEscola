@@ -212,13 +212,16 @@ button:hover{
     margin-left: 2em;
 }
 
+.sectionCiclos {
+
+}
+
 .ciclos {
     display: flex;
     margin-top: 10px;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    
 }
 
 .h1Ciclos {
@@ -236,6 +239,8 @@ button:hover{
 }
 
 .imgCiclos {
+    max-width: 450px;
+    height: 500px;
     margin: 5px 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -310,4 +315,28 @@ footer {
   }
   .social{
     width:20px;
+  }
+
+  @media (max-width: 1230px) {
+    .ciclos{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .fundamental1, .fundamental2, .ensinoMedio {
+        display: inline-block;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .imgCiclos {
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .buttonCiclos{
+        margin: 5px;
+    }
+    
   }

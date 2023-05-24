@@ -29,20 +29,20 @@ const mobileNavbar = new MobileNavbar (
 
 mobileNavbar.init();
 
-document.addEventListener("DOMContentLoaded"), function() {
+document.addEventListener("DOMContentLoaded", function() {
     let menuLinks = document.querySelectorAll('.nav-List li a');
 
     menuLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-
+            
             let targetId = this.getAttribute('href');
             let targetElement = document.querySelector(targetId);
-            let targetOffset = targetElement.offsetTop - 75px;
+            let targetOffset = targetElement.offsetTop - 75;
 
-            if (targetId === '#') {
+            if (targetId === 'top') {
                 window.scrollTo({
-                    top: 0,
+                    top: top,
                     behavior: 'smooth'
                 });
             } else {
@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded"), function() {
             }
         });
     });
-}
+});
