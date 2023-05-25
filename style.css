@@ -103,6 +103,7 @@ nav.scroll{
     }
 
     .sobre{
+        display: flex;
         flex-direction: column;
     }
 
@@ -155,12 +156,46 @@ nav.scroll{
 header{
     display: flex;
     background: url("./imgs/header1.jpg");
-    filter: brightness(50%);
+    /*filter: brightness(50%);*/
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 90vh;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 100%;
+    height: 90vh;
+}
+
+.informativo {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 20vh 65vw;
+    height: 100px;
+    width: 250px;
+}
+
+.informativo p{
+    color: white;
+}
+
+.informativo h3{
+    color: var(--azul);
+}
+
+.informativo ul{
+    color: white;
+    margin-left: 20px;
+}
+
+.informativo button{
+    margin-top: 10px;
+    width: 250px;
+    font-weight: 800;
+    text-align: center;
 }
 
 button{
@@ -194,6 +229,7 @@ button:hover{
 .divTxtSobre{
     margin-right: 20px;
     width: 50vw;
+    text-align: justify;
 }
 
 .divImgSobre{
@@ -239,8 +275,8 @@ button:hover{
 }
 
 .imgCiclos {
-    max-width: 450px;
-    height: 500px;
+    height: 100%;
+    width: 100%;
     margin: 5px 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -326,17 +362,20 @@ footer {
     .fundamental1, .fundamental2, .ensinoMedio {
         display: inline-block;
         text-align: center;
-        object-fit: cover;
+        align-items: center;
         width: 100%;
     }
-    
-    .imgCiclos {
+
+    .divImgCiclos {
         object-fit: cover;
-        width: 100%;
+        width: 90vw;
+        height: auto;
+        margin: auto;
     }
     
     .buttonCiclos{
-        margin: 5px;
+        padding: 2vh 10vw;
+
     }
     
   }
