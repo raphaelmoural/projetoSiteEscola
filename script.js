@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let targetElement = document.querySelector(targetId);
             let targetOffset = targetElement.offsetTop - 75;
 
-            if (targetId === 'top') {
+            if (targetId === '#top') {
                 window.scrollTo({
                     top: top,
                     behavior: 'smooth'
