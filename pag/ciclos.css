@@ -14,11 +14,13 @@
     text-align: justify;
 }
 
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
 .container {
     margin: 0px 20px;
-}
-.space {
-    padding: 50px;
 }
 
 html {
