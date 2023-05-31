@@ -55,11 +55,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 const images= [  
     './imgs/header1.jpg',
     './imgs/header2.jpg'
 ];
-    
+ 
+
 let currentIndex = 0;
 const headerContainer = document.querySelector('header');
 const radioInputs = document.querySelectorAll('input[name="header-image"]');
@@ -78,5 +80,9 @@ radioInputs.forEach((input, index) => {
     input.value = index + 1;
 });
 
-changeHeaderImage();
-    
+function rotateImages() {
+    currentIndex = (currentIndex + 1) % images.length;
+  changeHeaderImage();
+}
+  
+setInterval(rotateImages, 5000);
