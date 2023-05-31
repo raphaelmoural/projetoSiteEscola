@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let targetElement = document.querySelector(targetId);
             let targetOffset = targetElement.offsetTop - 75;
 
-            if (targetId === 'top') {
+            if (targetId === '#top') {
                 window.scrollTo({
                     top: top,
                     behavior: 'smooth'
@@ -54,3 +54,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+const images= [  
+    //image1
+      //image2
+    ];
+    
+    let currentIndex = 0;
+    const headerContainer = document.querySelector('.container');
+    const radioInputs = document.querySelectorAll('input[name="header-image"]');
+    
+    function changeHeaderImage() {
+    headerContainer.style.backgroundImage = `url('${images [currentIndex]}')`; 
+    }
+    
+    function handleRadioChange() {
+    currentIndex = parseInt(this.value, 10) - 1;
+      changeHeaderImage();
+    }
+    
+    radioInputs.forEach((input, index) => { input.addEventListener('change', handleRadioChange);  
+       input.value = index + 1;
+      });
+    
+    changeHeaderImage();
+    
