@@ -315,6 +315,10 @@ button:hover{
     height: auto;
 }
 
+.carrossel button {
+    cursor: pointer;
+}
+
 .ciclos {
     display: flex;
     margin-top: 10px;
