@@ -86,3 +86,44 @@ function rotateImages() {
 }
   
 setInterval(rotateImages, 5000);
+
+
+var slideIndex = 0;
+var slides = document.getElementsByClassName("carrossel")[0].getElementsByTagName("img");
+
+function showSlides(index) {
+    if (index >= slides.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+function nextSlide() {
+    slideIndex++;
+    showSlides(slideIndex);
+}
+
+function prevSlide() {
+    slideIndex--;
+    showSlides(slideIndex);
+}
+
+showSlides(slideIndex);
+
+var nextButton = document.createElement("button");
+nextButton.innerHTML = "Proximo";
+nextButton.onclick = nextSlide;
+
+var prevButton = document.createElement("button");
+prevButton.innerHTML = "Anterios";
+prevButton.onclick = prevSlide;
+
+document.body.appendChild(prevButton);
+document.body.appendChild(nextButton);

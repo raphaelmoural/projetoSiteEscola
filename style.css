@@ -303,8 +303,16 @@ button:hover{
     margin-left: 2em;
 }
 
-.sectionCiclos {
+.carrossel {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
 
+.carousel img {
+    width: 100%;
+    height: auto;
 }
 
 .ciclos {
