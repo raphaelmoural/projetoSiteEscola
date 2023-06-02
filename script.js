@@ -125,7 +125,9 @@ var prevButton = document.createElement("button");
 prevButton.innerHTML = "Anterios";
 prevButton.onclick = prevSlide;
 
+document.body.appendChild(prevButton);
+document.body.appendChild(nextButton);
 
-var carrossel = document.getElementsByClassName("carrossel");
+/*var carrossel = document.getElementsByClassName("carrossel");
 carrossel.appendChild(prevButton);
-carrossel.appendChild(nextButton);
+carrossel.appendChild(nextButton);*/
