@@ -303,7 +303,7 @@ button:hover{
     margin-left: 2em;
 }
 
-.carrossel {
+/*.carrossel {
     margin-top: 50px;
     align-items: center;
     display: flex;
@@ -317,6 +317,74 @@ button:hover{
 
 .carrossel button {
     cursor: pointer;
+}*/
+
+.fotos{
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    margin-left: 22vw;
+}
+
+.slides input{
+    display: none;
+}
+
+.imgSlide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.imgSlide img{
+    width: 700px;
+    height: 100%;
+}
+
+.label-nav{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.label-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.label-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25px;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50px;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75px;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100px;
 }
 
 .ciclos {
