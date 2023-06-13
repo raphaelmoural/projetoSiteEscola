@@ -88,6 +88,31 @@ function rotateImages() {
 setInterval(rotateImages, 5000);
 
 
+const menu = document.querySelectorAll('.imgSlide');
+
+function activeScroll(){
+    menu.classList.toggle('scroll', scrollX > 100)
+}
+
+window.addEventListener('scroll', activeScroll);
+
+let count = 1;
+document.getElementById('radio1').checked = true;
+
+setInterval(function(){
+    nextImg();
+}, 5000)
+
+function nextImg() {
+    count++
+    if(count>5){
+        count = 1;
+    }
+    document.getElementById('radio'+count).checked = true;
+}
+
+
+/*
 var slideIndex = 0;
 var slides = document.getElementsByClassName("carrossel")[0].getElementsByTagName("img");
 
@@ -127,7 +152,4 @@ prevButton.onclick = prevSlide;
 
 document.body.appendChild(prevButton);
 document.body.appendChild(nextButton);
-
-/*var carrossel = document.getElementsByClassName("carrossel");
-carrossel.appendChild(prevButton);
-carrossel.appendChild(nextButton);*/
+*/
