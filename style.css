@@ -332,7 +332,7 @@ button:hover{
     width: 500%;
     height: 100%;
     display: flex;
-    margin-left: 22vw;
+    margin-left: 25vw;
 }
 
 .slides input{
@@ -355,6 +355,7 @@ button:hover{
     position: absolute;
     width: 800px;
     margin-top: -40px;
+    margin-left: 21vw;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -377,19 +378,19 @@ button:hover{
 }
 
 #radio2:checked ~ .first{
-    margin-left: -25px;
+    margin-left: -25%;
 }
 
 #radio3:checked ~ .first{
-    margin-left: -50px;
+    margin-left: -50%;
 }
 
 #radio4:checked ~ .first{
-    margin-left: -75px;
+    margin-left: -75%;
 }
 
 #radio5:checked ~ .first{
-    margin-left: -100px;
+    margin-left: -100%;
 }
 
 .ciclos {

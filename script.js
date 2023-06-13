@@ -88,14 +88,6 @@ function rotateImages() {
 setInterval(rotateImages, 5000);
 
 
-const menu = document.querySelectorAll('.imgSlide');
-
-function activeScroll(){
-    menu.classList.toggle('scroll', scrollX > 100)
-}
-
-window.addEventListener('scroll', activeScroll);
-
 let count = 1;
 document.getElementById('radio1').checked = true;
 
