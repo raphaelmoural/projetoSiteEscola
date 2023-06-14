@@ -112,9 +112,21 @@ nav.scroll{
         flex-direction: column;
     }
 
+    .divImgSobre, .divTxtSobre{
+        margin: auto;
+    }
+
     .ciclos{
         flex-direction: column;
         margin: 10px;
+    }
+
+    .informativo{
+        transform: translate(10vw, 120%);
+    }
+
+    .div-radio{
+        transform: translate(10vw, 120%);
     }
 }
 
@@ -285,7 +297,6 @@ header{
 .divTxtSobre{
     margin-right: 20px;
     width: 50vw;
-    text-align: justify;
 }
 
 .divImgSobre{
@@ -493,6 +504,14 @@ footer p {
 }
 
 @media (max-width: 1230px) {
+    .informativo{
+        transform: translate(70vw, 120%);
+    }
+
+    .div-radio{
+        transform: translate(80vw, 26em);
+    }
+
     .ciclos{
         flex-direction: column;
         margin: 10px;
@@ -519,6 +538,14 @@ footer p {
     .sobre{
         flex-direction: column;
         margin-top: 10px;
+    }
+
+    .divImgSobre, .divTxtSobre{
+        margin: auto;
+    }
+
+    .divImgSobre{
+        margin-top: 20px;
     }
     
 }
