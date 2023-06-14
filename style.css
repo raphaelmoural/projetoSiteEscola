@@ -440,6 +440,10 @@ header{
     font-size: 1.1em;
 }
 
+textArea{
+    resize: none;
+}
+
 .buttonform{
     font-weight: bold;
     text-transform: uppercase;
