@@ -57,6 +57,7 @@ nav{
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 nav.scroll{
     background-color: var(--azul);
     box-shadow: rgba (5, 5, 131,0.8)0.2em 0.1em 0.2em;
@@ -117,6 +118,27 @@ nav.scroll{
     }
 }
 
+button{
+    background-color: var(--amarelo);
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: var(--azul);
+    color: var(--amarelo);
+}
+
+.container {
+    margin: 0px 20px;
+}
+
 .menu{
     list-style: none;
     float: right;
@@ -160,7 +182,6 @@ nav.scroll{
 header{
     display: flex;
     background: url("./imgs/header1.jpg");
-    /*filter: brightness(50%);*/
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -184,16 +205,16 @@ header{
     
 .div-radio input[type="radio"] {
     display: none;
-    }
+}
     
 .div-radio label {
-      display: inline-block;
-      margin: 5px 15px;
-      padding: 5px;
-      color:(--azul);
-      cursor: pointer;
-      transition: all 0.3s easy-in-out;
-      position: relative;
+    display: inline-block;
+    margin: 5px 15px;
+    padding: 5px;
+    color:(--azul);
+    cursor: pointer;
+    transition: all 0.3s easy-in-out;
+    position: relative;
 }
     
 .div-radio label::before{
@@ -211,7 +232,7 @@ header{
 }
     
 .div-radio input[type="radio"]:checked + label::before{
-      background-color: var(--amarelo);
+    background-color: var(--amarelo);
 }
 
 .div-radio input[type="radio"]:checked label::after{
@@ -230,7 +251,6 @@ header{
 .informativo {
     font-size: 1.2em;
     font-weight: 800;
-    /*margin: 20vh 65vw;*/
     height: 100px;
     width: 250px;
     transform: translate(370%, 120%);
@@ -254,28 +274,6 @@ header{
     width: 250px;
     font-weight: 800;
     text-align: center;
-}
-
-button{
-    background-color: var(--amarelo);
-    color: var(--azul);
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 8px;
-    transition: 0.5s;
-    
-}
-
-button:hover{
-    background-color: var(--azul);
-    color: var(--amarelo);
-}
-
-.container {
-    margin: 0px 20px;
 }
 
 .sobre{
@@ -322,6 +320,39 @@ button:hover{
 .carrossel button {
     cursor: pointer;
 }*/
+
+.ciclos {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.h1Ciclos {
+    padding: 10px 10px 10px 0px;
+    margin-top: 25px;
+}
+
+.fundamental1, .fundamental2, .ensinoMedio {
+    display: inline-block;
+    text-align: center;
+}
+
+.fundamental1 p, .fundamental2 p, .ensinoMedio  p{
+    color: var(--azul);
+}
+
+.imgCiclos {
+    height: 100%;
+    width: 100%;
+    margin: 5px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttonCiclos{
+    margin: 5px;
+}
 
 .fotos{
     overflow: hidden;
@@ -393,43 +424,6 @@ button:hover{
     margin-left: -100%;
 }
 
-.ciclos {
-    display: flex;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.h1Ciclos {
-    padding: 10px 10px 10px 0px;
-    margin-top: 25px;
-}
-
-.fundamental1, .fundamental2, .ensinoMedio {
-    display: inline-block;
-    text-align: center;
-}
-
-.fundamental1 p, .fundamental2 p, .ensinoMedio  p{
-    color: var(--azul);
-}
-
-.imgCiclos {
-    height: 100%;
-    width: 100%;
-    margin: 5px 0px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.buttonCiclos{
-    margin: 5px;
-}
-
-.fotos{
-    margin-top: 10px;
-}
-
 .form {
     margin-top: 25px;
     display: flex;
@@ -438,7 +432,6 @@ button:hover{
 }
 
 .input{
-    
     padding: 15px;
     margin: 8px auto;
     border-radius: 10px;
@@ -461,40 +454,41 @@ footer {
     margin-top: 30px;
     padding: 20px;
     text-align: center;
-  }
+}
   
-  .footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .socialMedia {
+.socialMedia {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-  }
+}
   
-  .socialMedia a {
+.socialMedia a {
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
     color: #333;
     transition: all 0.3s ease;
-  }
+}
   
-  footer p {
+footer p {
     font-size: 14px;
     color: #999;
     text-align: center;
-  }
-  .social{
-    width:20px;
-  }
+}
 
-  @media (max-width: 1230px) {
+.social{
+    width:20px;
+}
+
+@media (max-width: 1230px) {
     .ciclos{
         flex-direction: column;
         margin: 10px;
@@ -523,4 +517,4 @@ footer {
         margin-top: 10px;
     }
     
-  }
+}
