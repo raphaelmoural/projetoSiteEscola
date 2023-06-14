@@ -140,36 +140,36 @@ footer {
     margin-top: 50px;
     padding: 20px;
     text-align: center;
-  }
+}
   
-  .footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .socialMedia {
+.socialMedia {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-  }
+}
   
-  .socialMedia a {
+.socialMedia a {
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
     color: #333;
     transition: all 0.3s ease;
-  }
+}
   
-  footer p {
+footer p {
     font-size: 14px;
     color: #999;
     text-align: center;
-  }
+}
 
-  .social{
+.social{
     width:20px;
-  }
+}
